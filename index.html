@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="title">
+        <h1>My First Form</h1>
+        <h3>Thank you for helping us improve the platform</3>
+    </div>
+    <form action="" class="content-container">
+
+        <!-- Name Input -->
+
+        <label for="name" id="name-label" class="label-name">Name</label><br>
+        <input type="text" 
+           name="" 
+           id="name" 
+           class="input-input"
+           placeholder="enter your name" 
+           required>
+
+        <!-- Email Input -->
+
+        <label for="email" id="email-label" class="label-email">Email</label><br>
+        <input type="email" 
+            name="" 
+            id="email" 
+            placeholder="enter your email"
+            class="input-input"
+            required>
+
+        <!-- Age Input -->
+
+        <label for="number" id="number-label">Age</label><br>
+        <input type="number" 
+            name="" 
+            id="age" 
+            placeholder="enter your age"
+            min="10"
+            max="90"
+            class="input-input"
+            required>
+        
+        <!-- Current Role Selection-->
+
+        <p>Which best describes your current role?</p>
+        <select id="dropdown" class="input-input" required>
+            <option disabled selected>Select current role</option>
+            <option value="student">Student</option>
+            <option value="job">Full Time Job</option>
+            <option value="learner">Full Time Learner</option>
+            <option value="preferNo">Prefer not to say</option>
+            <option value="other">Other</option>
+        </select>
+
+        <!-- Recommend Radio -->
+
+        <p>Would you recommend Freecodecamp to a friend?</p>
+        <label class="input-radio"><input 
+            type="radio"
+            name="user-recommend"
+            class="input-radio"
+            value="definitely">definitely</label><br>
+        <label class="input-radio"><input 
+            type="radio"
+            name="user-recommend"
+            class="input-radio"
+            value="maybe">maybe</label><br>
+        <label class="input-radio"><input 
+            type="radio"
+            name="user-recommend"
+            class="input-radio"
+            value="not sure">Not sure</label><br>
+
+        <!-- Favorite Selection -->
+
+        <p>What is your favorite of Freecodecamp?</p>
+        <select id="dropdown" class="input-input" required>
+            <option disabled selected> Select an option</option>
+            <option value="challenges">Challenges</options>
+            <option value="projects">Projects</option>
+            <option value="Community">Community</option>
+            <option value="Open Source">Open Source</option>
+        </select>
+
+        <!-- improvement checkbox -->
+
+        <p>What woukd you like to improve?<em> (Check all that apply)</em></p>
+        <div class="checkbox-div">
+            <label class="checkbox-name"><input
+                name=""
+                type="checkbox"
+                class="input-checkbox"
+                value="front-end-project">Front-end Projects</label>
+            <label class="checkbox-name"><input
+                name=""
+                type="checkbox"
+                class="input-checkbox"
+                value="back-end-project">Back-end Projects</label>
+            <label class="checkbox-name"><input
+                name=""
+                type="checkbox"
+                class="input-checkbox"
+                value="Data-visualization">Data Visualization</label>
+            <label class="checkbox-name"><input
+                name=""
+                type="checkbox"
+                class="input-checkbox"
+                value="Challenges">Challenges</label><label class="checkbox-name"><input
+                name=""
+                type="checkbox"
+                class="input-checkbox"
+                value="Open-Source-Community">Open Source Community</label>
+            <label class="checkbox-name"><input
+                name=""
+                type="checkbox"
+                class="input-checkbox"
+                value="Gitter-hekp-rooms">Gitter help rooms</label>
+            <label class="checkbox-name"><input
+                name=""
+                type="checkbox"
+                class="input-checkbox"
+                value="Videos">Videos</label>
+            <label class="checkbox-name"><input
+                name=""
+                type="checkbox"
+                class="input-checkbox"
+                value="City-Meetups">City Meetups</label>
+            <label class="checkbox-name"><input
+                name=""
+                type="checkbox"
+                class="input-checkbox"
+                value="Wiki">Wiki</label>
+            <label class="checkbox-name"><input
+                name=""
+                type="checkbox"
+                class="input-checkbox"
+                value="Forum">Forum</label>
+            <label class="checkbox-name"><input
+                name=""
+                type="checkbox"
+                class="input-checkbox"
+                value="Additional-courses">Additional Courses</label>
+        </div>
+
+        <!-- Comments/Suggestion Textarea -->
+
+        <p>Any Comments or Suggestions?</p>
+
+        <textarea
+            id="comments"
+            placeholder="Enter your comment"
+            class="input-textarea"
+            name=""
+            placeholder="Enter your comment here"
+            rows="10">
+        </textarea>
+
+        <!-- Submit Button -->
+
+        <button
+            type="submit"
+            class="submit-button"
+            id="submit"> 
+        Submit</button>
+    </form>
+
+</body>
+</html>
